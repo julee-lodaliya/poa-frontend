@@ -1,0 +1,440 @@
+@import './scss/btn.scss';
+@import './scss/dark-color.scss';
+@import './scss/form-control.scss';
+@import './scss/fonts.scss';
+@import './scss/dashboard-tab.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// @import '/btn';
+// @import '/form-control';
+$background-image: url('../src/assets/images/bg.png');
+
+:root {
+
+  $warning-color: #FADB4B;
+  $text-shadow-color: rgba(0, 0, 0, .25);
+  $text-shadow-offset-x: 4px;
+  $text-shadow-offset-y: 4px;
+  $text-shadow-blur: 0px;
+  $text-shadow-spread: 0;
+  $text-shadow-color: red;
+}
+
+
+body.dark {
+  $warning-color: red;
+}
+
+body {
+  padding: 0;
+  color: $warning-color;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $brand-font;
+  color: $dark-color;
+  font-weight: bold;
+}
+.text-primary{
+  color: $primary-color !important ;
+}
+.border-primary{
+  border-color: $primary-color !important;
+}
+.bg-primary{
+  background-color: $primary-color !important;
+}
+.login_container {
+  background-image: $background-image;
+  background-size: cover; // Adjust as needed
+  background-repeat: no-repeat; // Adjust as needed
+  background-position: 50%;
+  background-size: cover;
+  color: $dark-color;
+  margin: 0 !important;
+  max-width: 100% !important;
+  min-height: 100vh;
+  padding: 0 !important;
+  font-family: var(--brand-font);
+}
+
+.login_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 39px 17px;
+  text-align: right;
+  width: 100%;
+}
+
+.lg {
+  font-size: 38px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+}
+
+.info {
+  font-size: 20px;
+  font-family: var(--brand-font);
+}
+
+.copy-right {
+  color: $color-gray;
+  font-family: $brand-font;
+}
+
+.form-control {
+  background: $email-input-bg-color;
+  color: $email-input-text-color;
+  border: $border;
+  border-radius: $btn-radius;
+}
+
+
+.cutsom-btn {
+
+
+  padding: $button-padding;
+
+
+  cursor: pointer;
+  min-width: 260px;
+  font-weight: 600;
+  height: 40px;
+  line-height: 40px;
+}
+
+.btn {
+  border-radius: $btn-radius;
+}
+
+.btn-primary {
+  background-color: $btn-primary;
+  border-color: $btn-primary;
+  color: $btn-light;
+}
+
+.btn-secondary {
+  background-color: $btn-outline-secondary;
+  border-color: $btn-outline-secondary;
+  color: $btn-light;
+}
+
+.btn-success {
+  background-color: $btn-primary;
+  border-color: $btn-primary;
+  color: $warning-color;
+}
+
+.btn-danger {
+  background-color: $btn-danger;
+  border-color: $btn-danger;
+  color: $danger-color;
+}
+
+.btn-warning {
+  background-color: $btn-warning;
+  border-color: $btn-warning;
+  color: $waning-btn-color;
+}
+
+.btn-info {
+  background-color: $btn-primary;
+  border-color: $btn-primary;
+  color: $warning-color;
+}
+
+
+
+.btn-outline-primary {
+  background-color: $btn-colortransparent;
+  border-color: $btn-primary;
+  color: $btn-primary;
+}
+
+.btn-outline-secondary {
+  background-color: $btn-colortransparent;
+  border-color: $btn-primary;
+  color: $btn-light;
+}
+
+.btn-outline-success {
+  background-color: $btn-colortransparent;
+  border-color: $btn-primary;
+  color: $warning-color;
+}
+
+.btn-outline-btn-danger {
+  background-color: $btn-colortransparent;
+  border-color: $btn-danger;
+  color: $danger-color;
+}
+
+.btn-outline-warning {
+  background-color: $btn-colortransparent;
+  border-color: $btn-warning;
+  color: $waning-btn-color;
+}
+
+.btn-outline-info {
+  background-color: $btn-colortransparent;
+  border-color: $btn-primary;
+  color: $warning-color;
+}
+
+.text-sm {
+  font-size: $font-size-sm;
+}
+
+.text-lg {
+  font-size: $font-size-lg;
+}
+
+.text-xl {
+  font-size: $font-size-xl;
+}
+.rounded-circle {
+  border-radius: $rounded-circle !important;
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+  .login_container {
+    background-position: 40%;
+  }
+
+}
+
+@media screen and (max-width:767px) {
+  .login_container {
+    background-image: none;
+    background-color: #d2daf3;
+  }
+
+  .login_box {
+    text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/**header**/
+
+.cook_app_info .cook_switcher {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cook_app_info .cook_switcher {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+}
+
+.cook_app_info .cook_switcher input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.cook_app_info .cook_slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $info-color;
+  border-radius: 100px;
+  transition: 0.4s;
+}
+
+.cook_app_info .cook_slider:before {
+  position: absolute;
+  content: '';
+  height: 39px;
+  width: 39px;
+  left: 0px;
+  top: 0px;
+  background: url(../src/assets/images/day-mode.png);
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.cook_app_info .cook_switcher input:checked+.cook_slider {
+  background-color: #101935;
+}
+
+.cook_switch input:checked+.cook_slider:before {
+  transform: translateX(81px);
+  background: url(../src/assets/images/night-mode.png);
+}
+
+.cook_switch input+.cook_slider:after {
+  content: "DAY MODE";
+  position: absolute;
+  right: 11px;
+  top: 5px;
+  color: #fff;
+  width: 67px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 700;
+}
+
+.cook_switch input:checked+.cook_slider:after {
+  content: "NIGHT MODE";
+  position: absolute;
+  left: 6px;
+  top: 4px;
+  width: 67px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 700;
+}
+
+.header .container-fluid {
+  justify-content: space-between;
+  display: flex;
+  height: 75px;
+  align-items: center;
+}
+
+.header {
+  background: $primary-color;
+}
+
+.cook_app_info {
+  display: flex;
+  align-items: center;
+}
+
+.cook_app_info button {
+  border: 0;
+  background: transparent;
+}
+
+.cook_filter {
+  margin: 0 10px;
+}
+
+.on-switch {
+  position: absolute;
+  right: 0;
+  width: 80px;
+  right: 6px;
+  line-height: 18px;
+  top: 0;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 14px;
+  padding: 2px 0;
+}
+
+.cook_filter .dropdown-toggle::after {
+  display: none;
+}
+
+.cook_filter .btn:hover {
+  background-color: transparent;
+  border: 0;
+}
+
+.cook_filter .btn:focus {
+  outline: none;
+}
+
+.cook_filter .dropdown-menu {
+  min-width: 200px;
+  --bs-dropdown-padding-y: 0;
+  top: 12px !important;
+  border-radius: 0 0 4px 4px !important;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  border: 0;
+}
+
+.cook_filter .dropdown-menu:after {
+  width: 22px;
+  height: 11px;
+  position: absolute;
+  top: -10px;
+  right: 0;
+  content: "";
+  background: url(../src/assets/images/triangle.svg);
+  background-repeat: no-repeat;
+}
+
+.cook_filter .dropdown-menu .dropdown-item {
+  font-size: 14px;
+  padding: 10px 10px;
+}
+
+.cook_filter .dropdown-menu .dropdown-item span {
+  padding-left: 12px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+
+.cook_filter .dropdown-item.active,
+.cook_filter .dropdown-item:active {
+  background-color: #f0f0f0;
+}
+
+.cook_filter .dropdown-item:first-child.active {
+  border-radius: 4px 4px 0 0;
+}
+aside.cook_side_bar {
+  width: 52px;
+
+  background: #16517B;  height: 100vh;
+}
+
+ul.list-unstyled.components {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.cook_side_bar .navbar-light { background-color: $primary-color;}
+ @media (min-width: 992px){
+.navbar-expand-lg .navbar-nav {
+    flex-direction: column;
+}
+}
+
+
+

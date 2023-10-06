@@ -1,0 +1,170 @@
+.marginfix .css-levciy-MuiTablePagination-displayedRows ,.css-pdct74-MuiTablePagination-selectLabel , .css-levciy-MuiTablePagination-displayedRows {
+    margin: 0 !important;
+  }
+  
+  // .small-font th,td {
+  //   font-size: 0.875rem;
+  // }
+  // .medium-font th,td {
+  //   font-size: 1rem;
+  // }
+  // .large-font th,td {
+  //   font-size: 1.2rem;
+  // }
+  .small-font{
+    th{
+      font-size: 0.875rem;
+    }
+    td{
+      font-size: 0.875rem;
+    }
+    p{
+      font-size: 0.875rem;
+    }
+  
+  }
+  .medium-font{
+    th{
+      font-size: 1rem;
+    }
+    td{
+      font-size: 1rem;
+    }
+    p{
+      font-size: 1rem;
+    }
+  }
+  .large-font{
+    th{
+      font-size: 1.2rem;
+    }
+    td{
+      font-size: 1.2rem;
+    }
+    p{
+      font-size: 1.2rem;
+    }
+  }
+  .text-blue{
+    color: $bg-colors !important ;
+  }
+  .css-1howxi1-MuiTableCell-root, .table-padding {
+    padding: 0.625rem 0.875rem  !important;
+  }
+  .css-dsuxgy-MuiTableCell-root {
+    padding: 0.5rem 0.875rem  !important;
+  }
+  
+  .status-pending{
+    color: #0072C6 !important;
+    background-color: #C8E4FA !important;
+    border-radius: 0.625rem !important;
+    padding: 3px 8px;
+  }
+  .status-acknowledged{
+    color: #009E49 !important;
+    background-color: #DCFCE7 !important;
+    border-radius: 0.625rem !important;
+    padding: 3px 8px;
+  }
+  .status-po-not-found{
+    color: $secondary-color !important;
+    background-color: #FFF7D8 !important;
+    border-radius: 0.625rem !important;
+    padding: 3px 8px;
+  }
+  
+  .show-me {
+    display: none;
+  }
+  
+  .show-on-hover:hover .show-me {
+    display: block;
+  }
+  
+  .font-bold{
+    font-weight: bold !important;
+  }
+  .table-header{
+    span{
+      font-weight: bold !important;
+    }
+  }
+  .search-box{
+    border: 1px solid rgb(227, 223, 223);
+    border-right: 0;
+    input:focus{
+      outline: 0;
+    }
+  }
+  .nav-link:active{
+    color: $secondary-color;
+  }
+  .select{
+    select:focus-visible{
+      outline: 0;
+    }
+  }
+
+  .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected{
+    color: $secondary-color !important;
+   
+  }
+  .css-19kzrtu{
+    padding:24px  0 !important;
+  }
+  .css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
+    padding: 0 .6rem !important;
+  }
+
+  .filters {
+    margin-right: 0.6rem;
+  }
+
+.filters .dropdown-toggle::after {
+    display: none;
+ }
+
+ .filters .btn-success {
+    background-color: transparent;
+    border: 1px solid #E7E7E7;
+    color: #333333;
+    height: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+  }
+  .filters .btn-success:active{
+    background-color: transparent;
+    border: 1px solid #E7E7E7;
+    color: #333333;
+  }
+  .filter-pop{
+    width: 50rem;
+    color: black !important;
+}
+.dropdown-item:hover{
+    background-color: transparent !important;
+}
+.dropdown-item:active{
+    background-color: transparent !important;
+}
+.dropdown-menu{
+    --bs-dropdown-link-hover-bg: transparent !important;
+}
+
+.date-picker{
+    border-bottom: 1px solid $dark-color;
+}
+
+.display-none{
+    display: none;
+}
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+    border-color: transparent !important;
+}
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input{
+    padding: 0.5rem 0.5rem !important;
+    border-bottom: 1px solid #989696 !important;
+}
